@@ -158,10 +158,10 @@ PROCESSING_SUBSYSTEM_DEF(station)
 		//Rolls from the table for the specific trait type
 		var/datum/station_trait/trait_type = pick_weight(selectable_traits)
 
-		// BANDASTATION FIX Start - 0 weight traits
+		// BANDASTATION FIX Start - 0 weight and 0 cost traits
 		if(!trait_type)
 			return
-		// BANDASTATION FIX End - 0 weight traits
+		// BANDASTATION FIX End - 0 weight and 0 cost traits
 
 		selectable_traits -= trait_type
 		budget -= initial(trait_type.cost)
